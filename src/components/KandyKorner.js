@@ -7,6 +7,9 @@ import { Register } from "./auth/Register"
 import { Locations } from "./Locations.js"
 import { Products } from "./Products.js"
 import "./KandyKorner.css"
+import { ProductContainer } from "./ProductsContainer"
+import { JobApplication } from "./jobApplication/JobApplication"
+import { EmployeeList } from "./EmployeeList"
 
 
 export const KandyKorner = () => {
@@ -26,7 +29,9 @@ export const KandyKorner = () => {
 				<Route index path="/login" element={<Login />} />
 				<Route path="/register" element={<Register />} />
 				<Route path="/locations" element={<Locations />} />
-				<Route path="/products" element={<Products />} />
+				<Route path="/products" element={<ProductContainer />} />
+				<Route path="/job_app" element={<JobApplication />}/>
+				<Route path="/employees" element={<EmployeeList />} />
 			</Route>
 	  </Routes>
 	)

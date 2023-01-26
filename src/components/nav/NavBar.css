@@ -1,10 +1,19 @@
+body {
+    margin:0;
+    padding:0;
+}
+
 .navbar {
+    background-color: gray;
+    height:6rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    align-items: center;
 }
 
 .navbar__item {
+    font-size: x-large;
     flex-basis: 20%;
     list-style-type: none;
 }
@@ -12,4 +21,3 @@
 .navbar__logout {
     margin-left: auto;
 }
-
